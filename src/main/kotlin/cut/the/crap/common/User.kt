@@ -10,7 +10,7 @@ import org.bson.types.ObjectId
 @Serializable
 data class User(
     @BsonId
-    override val id: String = ObjectId().toString(),
+    override val _id: String = ObjectId().toString(),
     var isAnonymous: Boolean = true,
     var email: String = "",
     var displayName: String = "",

@@ -14,5 +14,5 @@ data class Place(
     val description: String = "Treffen uns and der Bushaltestelle",
     val displayName: String = "Hermannstraße",
     @BsonId
-    override val id: String = ObjectId().toString()
+    override val _id: String = ObjectId().toString()
 ) : Model

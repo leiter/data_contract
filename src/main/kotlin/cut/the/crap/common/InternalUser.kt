@@ -8,7 +8,7 @@ import org.bson.types.ObjectId
 @Serializable
 data class InternalUser(
     @BsonId
-    override val id: String = ObjectId().toString(),
+    override val _id: String = ObjectId().toString(),
     val email: String = "",
     val hashedPassword: String,
     val exposedId: String

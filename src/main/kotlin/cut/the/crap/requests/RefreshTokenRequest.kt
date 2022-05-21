@@ -5,6 +5,6 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class RefreshTokenRequest(
-    override val id: String,
+    override val _id: String,
     val refreshToken: String,
 ) : Model

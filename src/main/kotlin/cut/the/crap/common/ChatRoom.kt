@@ -7,7 +7,7 @@ import org.bson.types.ObjectId
 
 @Serializable
 data class ChatRoom(
-    @BsonId override val id: String = ObjectId().toString(),
+    @BsonId override val _id: String = ObjectId().toString(),
     val userAccess: Map<String, Long> = hashMapOf(),  // userId and timestamp
     val allMessages: List<Message> = emptyList()
 ) : Model

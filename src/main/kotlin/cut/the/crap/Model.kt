@@ -1,5 +1,5 @@
 package cut.the.crap
 
 interface Model {
-    val id: String
+    val _id: String
 }

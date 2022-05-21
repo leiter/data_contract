@@ -5,9 +5,9 @@ import kotlinx.serialization.Serializable
 
 @Serializable
 data class RefreshToken(
-    override val id: String,
+    override val _id: String,
     val refreshToken: String,
     val expiresAt: Long
 ) : Model {
-    val userId: String = id
+    val userId: String = _id
 }
